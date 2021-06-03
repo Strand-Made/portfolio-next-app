@@ -4,6 +4,7 @@ import HeroComponent from "../components/hero-section/HeroComponent";
 import AboutSection from "../components/about-section/AboutSection";
 import ProjectsSection from "../components/projects-section/ProjectsSection";
 import SocialSection from "../components/socials-section/SocialSection";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <AboutSection />
       <ProjectsSection />
       <SocialSection />
+      <Footer />
     </>
   );
 }
