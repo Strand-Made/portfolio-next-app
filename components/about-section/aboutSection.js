@@ -4,7 +4,7 @@ import AboutCard from "./AboutCard";
 import AboutCardContent from "./AboutCardContent";
 import Container from "../Container";
 import { GiPencilRuler } from "react-icons/gi";
-import { FaFileCode } from "react-icons/fa";
+import { BsFileCode } from "react-icons/bs";
 
 const AboutSection = () => {
   return (
@@ -17,7 +17,7 @@ const AboutSection = () => {
           <Container>
             <div className="flex flex-col items-center">
               <AboutCard
-                icon={<FaFileCode className="text-3xl text-indigo-3" />}
+                icon={<BsFileCode className="text-3xl text-indigo-3" />}
                 title="Code"
                 content={<AboutCardContent />}
               />

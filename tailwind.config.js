@@ -6,6 +6,7 @@ module.exports = {
       "indigo-1": "#4C63B6",
       "indigo-2": "#647ACB",
       "indigo-3": "#19216C",
+      "gray-4": "#3E4C59",
       "gray-3": "#1F2933",
       "gray-2": "#323F4B",
       "gray-1": "#F5F7FA",
