@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-function ProfileImage() {
+const ProfileImage = () => {
   return (
     <div className="flex w-max-content bg-gray-3 rounded-full">
-      <div>
+      <div className="flex align-center">
         <Image
           src="/profile-img.png"
           alt="avatar of myself smiling"
@@ -13,6 +13,6 @@ function ProfileImage() {
       </div>
     </div>
   );
-}
+};
 
 export default ProfileImage;

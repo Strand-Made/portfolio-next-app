@@ -2,7 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
 
-function Navbar() {
+const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   return (
@@ -11,7 +11,9 @@ function Navbar() {
         <div className="flex flex-row justify-between">
           <div>
             <Link href="/">
-              <p className="text-3xl text-indigo-3 font-bolder">Bango</p>
+              <p className="text-3xl font-display text-indigo-3 font-bolder">
+                Bango
+              </p>
             </Link>
           </div>
           <div className="flex items-center sm:hidden">
@@ -41,6 +43,6 @@ function Navbar() {
       ) : null}
     </nav>
   );
-}
+};
 
 export default Navbar;

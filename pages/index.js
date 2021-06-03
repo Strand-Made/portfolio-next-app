@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Navbar from "../components/navbar/navbar";
-import HeroComponent from "../components/hero-section/heroComponent";
-import AboutSection from "../components/about-section/aboutSection";
+import Navbar from "../components/navbar/Navbar";
+import HeroComponent from "../components/hero-section/HeroComponent";
+import AboutSection from "../components/about-section/AboutSection";
+import ProjectsSection from "../components/projects-section/ProjectsSection";
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
       </Head>
       <Navbar />
       <HeroComponent />
-      <AboutSection></AboutSection>
+      <AboutSection />
+      <ProjectsSection />
     </>
   );
 }

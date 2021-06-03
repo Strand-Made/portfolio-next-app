@@ -1,4 +1,4 @@
-function AboutContent() {
+const AboutContent = () => {
   return (
     <>
       <h2 className="text-3xl text-center mb-2 ">👋 Stian </h2>
@@ -12,6 +12,6 @@ function AboutContent() {
       </div>
     </>
   );
-}
+};
 
 export default AboutContent;
