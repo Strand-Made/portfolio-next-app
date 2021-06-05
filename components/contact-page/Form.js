@@ -1,6 +1,7 @@
 import FormGroup from "./FormGroup";
 import FormInputs from "./FormInputs";
 import FormTextArea from "./FormTextArea";
+import FormButton from "./FormButton";
 
 const Form = () => {
   return (
@@ -11,16 +12,19 @@ const Form = () => {
           Feel free to get in touch with me for anything work related or just
           for a quick chat.
         </p>
+        <FormGroup>
+          <FormInputs id="name" label="Name" />
+        </FormGroup>
+        <FormGroup>
+          <FormInputs id="email" label="Email" />
+        </FormGroup>
+        <FormGroup>
+          <FormTextArea id="message" label="Subject" />
+        </FormGroup>
+        <div className="self-end">
+          <FormButton />
+        </div>
       </div>
-      <FormGroup>
-        <FormInputs id="name" label="Name" />
-      </FormGroup>
-      <FormGroup>
-        <FormInputs id="email" label="Email" />
-      </FormGroup>
-      <FormGroup>
-        <FormTextArea id="message" label="Subject" />
-      </FormGroup>
     </form>
   );
 };
