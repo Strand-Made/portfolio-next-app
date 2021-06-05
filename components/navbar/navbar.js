@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { HiMenu, HiX } from "react-icons/hi";
+import Logo from "../logo/Logo";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -10,11 +11,7 @@ const Navbar = () => {
       <div className="container lg:mx-auto">
         <div className="flex flex-row justify-between">
           <div>
-            <Link href="/">
-              <p className="text-3xl font-display text-indigo-3 font-bolder">
-                Bango
-              </p>
-            </Link>
+            <Logo theme="regular" href="/" />
           </div>
           <div className="flex items-center sm:hidden">
             <button className="" onClick={handleClick}>

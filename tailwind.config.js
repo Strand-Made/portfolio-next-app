@@ -17,7 +17,7 @@ module.exports = {
     //replace default font utility with imported fonts
     fontFamily: {
       body: ["Open Sans", "sans-serif"],
-      display: ["Paytone-One", "sans-serif"],
+      display: ['"Paytone One"', "sans-serif"],
       sans: ["Work Sans", "sans-serif"],
     },
     extend: {},

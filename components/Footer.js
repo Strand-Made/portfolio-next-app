@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "./Container";
+import Logo from "./logo/Logo";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
             </li>
           </ul>
           <div className="flex justify-between items-end">
-            <p>Bango</p>
+            <Logo theme="white" href="/" />
             <div className="flex text-gray-1">
               <IoLogoLinkedin className="text-3xl" />
               <IoLogoGithub className="text-3xl" />
