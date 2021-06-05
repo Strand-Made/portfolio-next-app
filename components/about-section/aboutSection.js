@@ -15,7 +15,7 @@ const AboutSection = () => {
         </AboutContainer>
         <div className="-mt-20">
           <Container>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center justify-center md:flex-row">
               <AboutCard
                 icon={<BsFileCode className="text-3xl text-indigo-3" />}
                 title="Code"
