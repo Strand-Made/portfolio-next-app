@@ -3,7 +3,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
 const ProjectCard = () => {
-  // const [mouseHover, setMouseHover] = useState(false);
   const cardAnimationVariants = {
     initial: {
       opacity: 0,
