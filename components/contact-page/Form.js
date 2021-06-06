@@ -9,6 +9,10 @@ import FormButton from "./FormButton";
 
 const Form = () => {
   const router = useRouter();
+  const nameInput = document.querySelector("#name");
+  const emailInput = document.querySelector("#email");
+  const subjectInput = document.querySelector("#subject");
+
   function sendMail(e) {
     e.preventDefault();
 

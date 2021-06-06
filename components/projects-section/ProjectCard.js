@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useState } from "react";
 const ProjectCard = () => {
   const cardAnimationVariants = {
     initial: {
@@ -24,8 +23,8 @@ const ProjectCard = () => {
       >
         <h4 className="text-indigo-3">Project text</h4>
         <div>
-          <Link href="/">
-            <a className="block bg-pink-cta text-pink-white font-body text-base text-center w-36 shadow-md py-1 rounded-full">
+          <Link href="/project">
+            <a className="block bg-pink-cta text-pink-white font-body text-base text-center w-36 shadow-md py-1 rounded-full hover:bg-indigo-3 focus:bg-indigo-3 focus:shadow hover:shadow">
               View
             </a>
           </Link>

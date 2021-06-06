@@ -9,12 +9,12 @@ const SocialSection = () => {
         <SocialCard
           title="Visit my Github"
           icon={<IoLogoGithub className="text-6xl" />}
-          link="github.com"
+          href="https://www.github.com"
         ></SocialCard>
         <SocialCard
           title="Visit my Linkedin"
           icon={<IoLogoLinkedin className="text-6xl" />}
-          link="linkedin.com"
+          href="https://www.linkedin.com"
         ></SocialCard>
       </div>
     </Container>
