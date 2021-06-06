@@ -1,11 +1,41 @@
+import emailjs from "emailjs-com";
+import apiKeys from "../../apiKeys";
+import { useRouter } from "next/router";
+
 import FormGroup from "./FormGroup";
 import FormInputs from "./FormInputs";
 import FormTextArea from "./FormTextArea";
 import FormButton from "./FormButton";
 
 const Form = () => {
+  const router = useRouter();
+  function sendMail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        apiKeys.SERVICE_ID,
+        apiKeys.TEMPLATE_ID,
+        e.target,
+        apiKeys.USER_ID
+      )
+      .then(
+        (result) => {
+          router.push("/successMail");
+
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
+
   return (
-    <form className="flex flex-col mt-3 w-full rounded-lg shadow-xl h-auto p-2 bg-gray-1">
+    <form
+      onSubmit={sendMail}
+      className="flex flex-col mt-3 w-full rounded-lg shadow-xl h-auto p-2 bg-gray-1"
+    >
       <div className="flex flex-col items-center px-4">
         <h1 className="text-3xl text-gray-3 mb-3">Send me a message</h1>
         <p className="text-base font-body text-gray-3">
@@ -13,13 +43,13 @@ const Form = () => {
           for a quick chat.
         </p>
         <FormGroup>
-          <FormInputs id="name" label="Name" />
+          <FormInputs id="name" name={"name"} label="Name" />
         </FormGroup>
         <FormGroup>
-          <FormInputs id="email" label="Email" />
+          <FormInputs id="email" name={"email"} label="Email" />
         </FormGroup>
         <FormGroup>
-          <FormTextArea id="message" label="Subject" />
+          <FormTextArea id="message" name={"message"} label="Subject" />
         </FormGroup>
         <div className="self-end">
           <FormButton />

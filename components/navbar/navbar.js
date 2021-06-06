@@ -25,7 +25,7 @@ const Navbar = () => {
           <ul className="flex hidden sm:block">
             <li>Projects</li>
             <li>
-              <Link href="/">
+              <Link href="/contact">
                 <a>Contact</a>
               </Link>
             </li>
@@ -34,8 +34,16 @@ const Navbar = () => {
       </div>
       {click ? (
         <ul className="bg-indigo-3 text-center">
-          <li className="text-gray-1">Projects</li>
-          <li className="text-gray-1">Contact me</li>
+          <li className="text-gray-1">
+            <Link href="/">
+              <a>Projects</a>
+            </Link>
+          </li>
+          <li className="text-gray-1">
+            <Link href="/contact">
+              <a>Contact me</a>
+            </Link>
+          </li>
         </ul>
       ) : null}
     </nav>

@@ -13,6 +13,7 @@ module.exports = {
       "gray-1": "#F5F7FA",
       "pink-cta": "#620042",
       "pink-white": "#FFE3EC",
+      "yellow-cta": "#F7C948",
     },
     //replace default font utility with imported fonts
     fontFamily: {
