@@ -1,7 +1,7 @@
 const AboutContent = () => {
   return (
     <>
-      <h2 className="text-3xl text-center mb-2 ">👋 Stian </h2>
+      <h2 className="text-3xl font-sans text-center mb-2 ">👋 Stian </h2>
       <div className="font-body">
         <p className="max-w-prose  font-normal">
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
