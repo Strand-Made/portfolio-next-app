@@ -1,12 +1,15 @@
+import { server } from "../config";
 import Head from "next/head";
+
 import Navbar from "../components/navbar/Navbar";
+import Wrapper from "../components/Wrapper";
 import HeroComponent from "../components/hero-section/HeroComponent";
 import AboutSection from "../components/about-section/AboutSection";
 import ProjectsSection from "../components/projects-section/ProjectsSection";
 import SocialSection from "../components/socials-section/SocialSection";
 import Footer from "../components/Footer";
 
-export default function Home() {
+export default function Home({ projects }) {
   return (
     <>
       <Head>
@@ -17,12 +20,25 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <HeroComponent />
-      <AboutSection />
-      <ProjectsSection />
-      <SocialSection />
-      <Footer />
+      <Wrapper>
+        <Navbar />
+        <HeroComponent />
+        <AboutSection />
+        <ProjectsSection projects={projects} />
+        <SocialSection />
+        <Footer />
+      </Wrapper>
     </>
   );
 }
+
+export const getStaticProps = async () => {
+  const res = await fetch(`${server}/api/projects`);
+  const projects = await res.json();
+
+  return {
+    props: {
+      projects,
+    },
+  };
+};
