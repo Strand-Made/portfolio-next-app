@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-const ProjectCard = () => {
+const ProjectCard = ({ project }) => {
   const cardAnimationVariants = {
     initial: {
       opacity: 0,
@@ -12,18 +12,27 @@ const ProjectCard = () => {
   };
 
   return (
-    <div className="block rounded-2xl shadow-md hover:shadow-sm relative bg-gray-1 h-48 w-2/3 max-w-xs">
-      Card
+    <div
+      key={project.id}
+      className="block relative rounded-2xl shadow-md hover:shadow-sm relative bg-gray-1 h-48 w-2/3 max-w-xs"
+    >
+      <Image
+        className="absolute top-0 right-0 left-0 rounded-2xl"
+        src={project.image}
+        desc={project.description}
+        layout="fill"
+      />
+
       <motion.div
         initial="initial"
         whileHover="hover"
         variants={cardAnimationVariants}
         transition={{ duration: 0.4 }}
-        className="bg-indigo-3 bg-opacity-5 flex flex-col items-center justify-between py-5 absolute w-full top-0 rounded-2xl h-full"
+        className="bg-indigo-3 bg-opacity-50 flex flex-col items-center justify-between py-5 absolute z-index-50 w-full top-0 rounded-2xl h-full"
       >
-        <h4 className="text-indigo-3">Project text</h4>
+        <h4 className="text-xl text-indigo-4">{project.title}</h4>
         <div>
-          <Link href="/project">
+          <Link href={`/project/${project.id}`}>
             <a className="block bg-pink-cta text-pink-white font-body text-base text-center w-36 shadow-md py-1 rounded-full hover:bg-indigo-3 focus:bg-indigo-3 focus:shadow hover:shadow">
               View
             </a>

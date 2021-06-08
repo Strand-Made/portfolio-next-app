@@ -3,12 +3,14 @@ import ProjectsContainer from "./ProjectsContainer";
 import ProjectCard from "./ProjectCard";
 import { IoMdInformationCircle } from "react-icons/io";
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ projects }) => {
   return (
     <ProjectsContainer>
-      <h2 className="text-3xl text-center text-gray-1">Projects</h2>
-      <div className="flex flex-col items-center my-3">
-        <ProjectCard />
+      <h1 className="text-center text-gray-1">Projects</h1>
+      <div className="flex flex-col space-y-5 items-center my-3">
+        {projects.map((project) => (
+          <ProjectCard key={project.id} project={project} />
+        ))}
       </div>
       <div className="flex items-center">
         <IoMdInformationCircle className="text-5xl" />
