@@ -1,6 +1,6 @@
 const ProjectDescription = ({ title, description }) => {
   return (
-    <div className="flex flex-col items-center shadow bg-gray-1 xl:h-96 lg:ml-5 rounded-lg p-2">
+    <div className="flex flex-col items-center shadow bg-gray-1 h-64 xl:h-96 lg:ml-5 rounded-lg p-2">
       <h1 className="text-gray-3 font-sans font-bold">{title}</h1>
       <div className="maw-w-prose flex-grow">
         <p className="font-body text-base text-gray-3">{description}</p>

@@ -2,13 +2,14 @@ import Image from "next/image";
 
 const ProfileImage = () => {
   return (
-    <div className="flex w-max-content bg-gray-3 rounded-full">
-      <div className="flex align-center">
+    <div className="flex w-auto bg-gray-3 rounded-full">
+      <div className="flex w-full justify-center align-center relative">
         <Image
+          className=" object-scale-down transform translate-x-2.5 translate-y-3.5"
           src="/profile-img.png"
           alt="avatar of myself smiling"
-          width={200}
-          height={200}
+          width={300}
+          height={300}
         />
       </div>
     </div>

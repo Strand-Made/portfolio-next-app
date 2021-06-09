@@ -9,9 +9,6 @@ import FormButton from "./FormButton";
 
 const Form = () => {
   const router = useRouter();
-  const nameInput = document.querySelector("#name");
-  const emailInput = document.querySelector("#email");
-  const subjectInput = document.querySelector("#subject");
 
   function sendMail(e) {
     e.preventDefault();
@@ -41,8 +38,10 @@ const Form = () => {
       className="flex flex-col mt-3 w-full rounded-lg shadow-xl h-auto p-2 bg-gray-1"
     >
       <div className="flex flex-col items-center px-4">
-        <h1 className="text-3xl text-gray-3 mb-3">Send me a message</h1>
-        <p className="text-base font-body text-gray-3">
+        <h1 className="font-sans text-gray-3 font-bold mb-3">
+          Send me a message
+        </h1>
+        <p className="text-gray-3 max-w-prose">
           Feel free to get in touch with me for anything work related or just
           for a quick chat.
         </p>
