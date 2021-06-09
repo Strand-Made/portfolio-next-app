@@ -11,7 +11,7 @@ const Navbar = () => {
   const styles = {
     mobileMenuStyle:
       "flex flex-col space-y-5 transition-all  ease-in-out duration-700 bg-indigo-1 text-center absolute h-screen left-0 right-0 top-0 py-10 z-40 transform ",
-    mobileMenuContainer: "flex relative w-full transition-all sm:hidden",
+    mobileMenuContainer: "flex relative w-full sm:hidden",
   };
 
   return (
@@ -22,11 +22,15 @@ const Navbar = () => {
             <Logo theme="regular" href="/" />
           </div>
           <div className={`${styles.mobileMenuContainer}`}>
-            <button className="absolute right-0 z-50 " onClick={handleClick}>
+            <button
+              role="toggle mobilenav"
+              className="absolute right-0 z-50 transition-colors duration-300 ease-in-out  focus:outline-none focus:bg-indigo-2 rounded-full "
+              onClick={handleClick}
+            >
               {click ? (
-                <HiX className="text-4xl fill-current text-gray-1" />
+                <HiX className="text-4xl fill-current" aria-label="close nav" />
               ) : (
-                <HiMenu className="text-4xl" />
+                <HiMenu className="text-4xl" aria-label="open nav" />
               )}
             </button>
 
