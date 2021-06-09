@@ -41,9 +41,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="text-gray-1">
-                <Link href="/contact">
-                  <a>Contact me</a>
-                </Link>
+                <Button href="/contact" variant="primary" text="Contact me" />
               </li>
             </ul>
           </div>

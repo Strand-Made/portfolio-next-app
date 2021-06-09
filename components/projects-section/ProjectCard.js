@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
       >
         <h4 className="text-xl text-indigo-4">{project.title}</h4>
         <div>
-          <Link href={`/project/${project.id}`}>
+          <Link href="/project[id]" as={`/project/${project.id}`}>
             <a className="block bg-pink-cta text-pink-white font-body text-base text-center w-36 shadow-md py-1 rounded-full hover:bg-indigo-3 focus:bg-indigo-3 focus:shadow hover:shadow">
               View
             </a>
