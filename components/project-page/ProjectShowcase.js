@@ -1,18 +1,19 @@
 import Image from "next/image";
 import Button from "../Button";
 
-const ProjectShowcase = () => {
+const ProjectShowcase = ({ image }) => {
   return (
     <div className="w-9/12">
-      <div>
+      <div className="shadow-lg rounded-2xl">
         <Image
           className="rounded-2xl"
-          src="/exampleWebsite.jpg"
-          width={350}
-          height={280}
+          src={image}
+          width={400}
+          height={300}
+          layout="responsive"
         />
       </div>
-      <div className="flex justify-end mb-4">
+      <div className="flex justify-end mt-2 mb-4">
         <Button variant="primary" href="https://linkedin.com" text="Link" />
 
         <Button

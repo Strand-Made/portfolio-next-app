@@ -1,14 +1,29 @@
+import Image from "next/image";
 import Navbar from "../../../components/navbar/Navbar";
+import ProjectContainer from "../../../components/project-page/ProjectContainer";
+import ProjectDescription from "../../../components/project-page/ProjectDescription";
+import ProjectShowcase from "../../../components/project-page/ProjectShowcase";
 import Footer from "../../../components/Footer";
+import Container from "../../../components/Container";
 import Wrapper from "../../../components/Wrapper";
 import { server } from "../../../config";
 
 const Project = ({ project }) => {
+  console.log;
   return (
     <>
       <Wrapper>
         <Navbar />
-        <h1>Project: {project.title}</h1>
+        <Container>
+          <ProjectContainer>
+            <ProjectShowcase image={project.image} />
+            <ProjectDescription
+              title={project.title}
+              description={project.description}
+            />
+          </ProjectContainer>
+        </Container>
+
         <Footer />
       </Wrapper>
     </>
