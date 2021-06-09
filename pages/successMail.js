@@ -27,7 +27,7 @@ const successMail = () => {
                 I will reply as quick as I can...
               </p>
               <p className="my-2">In the mean time</p>
-              <Link href="/">
+              <Link href="/#projects">
                 <a className="block bg-pink-cta text-pink-white font-body text-base text-center shadow-md py-1 px-2 rounded-full">
                   Check out my projects
                 </a>
