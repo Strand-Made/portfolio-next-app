@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div
       key={project.id}
-      className="block relative rounded-2xl shadow-md hover:shadow-sm relative bg-gray-1 h-48 w-2/3 max-w-xs"
+      className="block relative rounded-2xl transition-shadow duration-700 ease-in-out shadow-lg hover:shadow-sm relative h-56 md:h-72 max-h-96 max-w-lg w-2/3 max-w-xs"
     >
       <Image
         className="absolute top-0 right-0 left-0 rounded-2xl"

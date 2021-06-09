@@ -5,15 +5,15 @@ import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 const SocialSection = () => {
   return (
     <Container>
-      <div className="flex flex-row items-center">
+      <div className="flex flex-row w-full items-center justify-center">
         <SocialCard
           title="Visit my Github"
-          icon={<IoLogoGithub className="text-6xl" />}
+          icon={<IoLogoGithub className="text-8xl" />}
           href="https://www.github.com"
         ></SocialCard>
         <SocialCard
           title="Visit my Linkedin"
-          icon={<IoLogoLinkedin className="text-6xl" />}
+          icon={<IoLogoLinkedin className="text-8xl" />}
           href="https://www.linkedin.com"
         ></SocialCard>
       </div>
