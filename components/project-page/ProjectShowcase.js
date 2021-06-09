@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../Button";
+import { FiGithub } from "react-icons/fi";
 
 const ProjectShowcase = ({ image }) => {
   return (
@@ -14,12 +15,13 @@ const ProjectShowcase = ({ image }) => {
         />
       </div>
       <div className="flex justify-end mt-2 mb-4">
-        <Button variant="primary" href="https://linkedin.com" text="Link" />
+        <Button variant="primary" href="https://linkedin.com" text="Website" />
 
         <Button
           variant="outlined-gray"
           href="https://github.com"
-          text="Github"
+          text="Code"
+          icon={<FiGithub className="text-xl" />}
         />
       </div>
     </div>

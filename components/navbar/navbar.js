@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => setClick(!click);
   const styles = {
     mobileMenuStyle:
-      "flex flex-col space-y-5 transition-all  ease-in-out duration-700 bg-indigo-1 text-center absolute h-screen left-0 right-0 top-0 py-10 z-40 transform ",
+      "flex flex-col items-center space-y-5 transition-all  ease-in-out duration-700 bg-indigo-1 text-center absolute h-screen left-0 right-0 top-0 py-10 z-40 transform ",
     mobileMenuContainer: "flex relative w-full sm:hidden",
   };
 
