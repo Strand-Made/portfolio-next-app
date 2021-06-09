@@ -30,7 +30,7 @@ const ProjectCard = ({ project }) => {
         transition={{ duration: 0.4 }}
         className="bg-indigo-3 bg-opacity-50 flex flex-col items-center justify-between py-5 absolute z-index-50 w-full top-0 rounded-2xl h-full"
       >
-        <h4 className="text-xl text-indigo-4">{project.title}</h4>
+        <h4 className="text-xl">{project.title}</h4>
         <div>
           <Link href="/project[id]" as={`/project/${project.id}`}>
             <a className="block bg-pink-cta text-pink-white font-body text-base text-center w-36 shadow-md py-1 rounded-full hover:bg-indigo-3 focus:bg-indigo-3 focus:shadow hover:shadow">

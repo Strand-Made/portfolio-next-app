@@ -7,18 +7,25 @@ const ProjectsSection = ({ projects }) => {
   return (
     <ProjectsContainer>
       <h1 className="text-center text-gray-1">Projects</h1>
-      <div className="flex flex-col space-y-5 items-center my-3">
+      <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-center my-3">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-      <div className="flex items-center">
-        <IoMdInformationCircle className="text-5xl" />
-        <p className="font-body text-xs max-w-prose">
-          You are free to contact me to see more projects, or you can check out
-          my github&nbsp;
+      <div className="flex items-center bg-indigo-3 rounded-xl mx-auto max-w-xl p-2">
+        <div className="mr-2">
+          <IoMdInformationCircle className="text-4xl" />
+        </div>
+        <p className="max-w-prose">
+          You are free to {""}
+          <Link href="/contact">
+            <a className="text-indigo-4 font-bold hover:underline focus:underline">
+              contact me
+            </a>
+          </Link>{" "}
+          to see more projects, or you can check out my github&nbsp;
           <Link href="https://github.com/Strand-Made/">
-            <a className="text-indigo-3 hover:underline focus:underline">
+            <a className="text-indigo-4 font-bold hover:underline focus:underline">
               here
             </a>
           </Link>

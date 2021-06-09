@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
-import useOnClickOutside from "../../hooks";
 import Link from "next/link";
+import useOnClickOutside from "../../hooks";
+import Container from "../Container";
 import { HiMenu, HiX } from "react-icons/hi";
 import Logo from "../logo/Logo";
 import Button from "../Button";
@@ -16,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="font-sans text-indigo-3 w-full">
-      <div className="lg:container lg:mx-auto">
+      <div className="container md:mx-auto">
         <div className="flex flex-row justify-between w-full">
           <div>
             <Logo theme="regular" href="/" />
