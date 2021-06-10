@@ -3,13 +3,14 @@ import AboutContainer from "./AboutContainer";
 import AboutCard from "./AboutCard";
 import AboutCardContent from "./AboutCardContent";
 import Container from "../Container";
+
 import { GiPencilRuler } from "react-icons/gi";
 import { BsFileCode } from "react-icons/bs";
 
 const AboutSection = () => {
   return (
     <>
-      <div className="w-full ">
+      <div className="w-full">
         <AboutContainer>
           <AboutContent />
         </AboutContainer>
