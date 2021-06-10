@@ -7,11 +7,11 @@ const ProjectsSection = ({ projects }) => {
   return (
     <ProjectsContainer>
       <h1 className="text-center text-gray-1">Projects</h1>
-      <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-center my-3">
+      <ul className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-center my-3">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
-      </div>
+      </ul>
       <div className="flex items-center bg-indigo-3 rounded-xl mx-auto max-w-xl p-2">
         <div className="mr-2">
           <IoMdInformationCircle className="text-4xl" />
