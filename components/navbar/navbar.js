@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { FiGithub } from "react-icons/fi";
 import useOnClickOutside from "../../hooks";
 import Container from "../Container";
 import Logo from "../logo/Logo";
@@ -22,7 +23,12 @@ const Navbar = () => {
             <MobileMenu open={open} setOpen={setOpen} />
           </div>
           <ul className="hidden mt-2 sm:flex items-center space-x-3">
-            <NavLink href="/#projects" text="Projects" textDark={true} />
+            <NavLink
+              href="https://github.com/Strand-made"
+              text="Github"
+              icon={<FiGithub className="text-xl text-current" />}
+              textDark={true}
+            />
             <li>
               <Button variant="primary" href="/contact" text="Contact me" />
             </li>
