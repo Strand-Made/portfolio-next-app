@@ -1,12 +1,13 @@
 import emailjs from "emailjs-com";
 import apiKeys from "../../apiKeys";
 import { useRouter } from "next/router";
-
 import FormGroup from "./FormGroup";
 import FormInputs from "./FormInputs";
 import InputLabel from "./InputLabel";
 import FormTextArea from "./FormTextArea";
 import FormButton from "./FormButton";
+import BlobLeft from "../patterns/BlobLeft";
+import BlobRight from "../patterns/BlobRight";
 
 const Form = () => {
   const router = useRouter();
@@ -36,9 +37,11 @@ const Form = () => {
   return (
     <form
       onSubmit={sendMail}
-      className="flex flex-col py-5 items-center mt-3 w-full rounded-lg shadow-xl mx-auto max-w-screen-md h-4/5 p-2 bg-gray-1"
+      className="flex flex-col relative py-5 items-center mt-3 w-full rounded-lg shadow-xl mx-auto max-w-screen-md h-4/5 p-2 bg-gray-1"
     >
-      <div className="flex flex-col items-center px-4">
+      <BlobLeft className=" z-0  opacity-20 absolute left-0 top-0 rounded-l w-full h-sm max-w-xl" />
+      <BlobRight className=" z-0  opacity-20 absolute right-0 bottom-0 rounded-r" />
+      <div className="flex flex-col items-center px-4 z-50">
         <h1 className="font-sans text-gray-3 font-bold mb-3">
           Send me a message
         </h1>

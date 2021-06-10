@@ -1,4 +1,4 @@
-const BlobTop = ({ className }) => {
+const BlobCenter = ({ className }) => {
   return (
     <svg
       aria-hidden="true"
@@ -22,4 +22,4 @@ const BlobTop = ({ className }) => {
   );
 };
 
-export default BlobTop;
+export default BlobCenter;
