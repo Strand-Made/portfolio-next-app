@@ -1,5 +1,6 @@
 import NavLink from "./NavLink";
 import Button from "../Button";
+import { FiGithub } from "react-icons/fi";
 
 const MobileMenu = ({ open }) => {
   const styles = {
@@ -12,7 +13,11 @@ const MobileMenu = ({ open }) => {
         open ? "translate-x-0" : "translate-x-full "
       } `}
     >
-      <NavLink href="/#projects" text="Projects" />
+      <NavLink
+        href="https://github.com/Strand-made"
+        text="Github"
+        icon={<FiGithub className="text-xl text-current" />}
+      />
 
       <li className="text-gray-1">
         <Button href="/contact" variant="primary" text="Contact me" />
