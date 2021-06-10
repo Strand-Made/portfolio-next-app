@@ -22,10 +22,12 @@ export default function Home({ projects }) {
       </Head>
       <Wrapper>
         <Navbar />
-        <HeroComponent />
-        <AboutSection />
-        <ProjectsSection projects={projects} />
-        <SocialSection />
+        <main className="flex flex-col min-h-screen">
+          <HeroComponent />
+          <AboutSection />
+          <ProjectsSection projects={projects} />
+          <SocialSection />
+        </main>
         <Footer />
       </Wrapper>
     </>

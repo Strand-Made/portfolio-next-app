@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/navbar/Navbar";
+import Wrapper from "../components/Wrapper";
 import Container from "../components/Container";
 import Form from "../components/contact-page/Form";
 import Footer from "../components/Footer";
@@ -14,11 +15,14 @@ export default function Contact() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <Container>
-        <Form></Form>
-      </Container>
-      <Footer />
+      <Wrapper>
+        <Navbar />
+        <Container>
+          <Form />
+        </Container>
+
+        <Footer />
+      </Wrapper>
     </>
   );
 }
