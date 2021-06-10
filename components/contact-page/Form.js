@@ -45,7 +45,7 @@ const Form = () => {
       <div>
         <BlobRight className=" z-0  opacity-20 absolute right-0 bottom-0 rounded-r" />
       </div>
-      <div className="flex flex-col items-center px-4 z-50">
+      <div className="flex flex-col items-center px-4 z-30">
         <h1 className="font-sans text-gray-3 font-bold mb-3">
           Send me a message
         </h1>
