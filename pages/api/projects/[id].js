@@ -1,4 +1,4 @@
-import { projects } from "../../../public/projectsData";
+import { projects } from "../../../projectsData";
 
 export default function handler({ query: { id } }, res) {
   const filtered = projects.filter((project) => project.id === id);
