@@ -5,7 +5,7 @@ const AboutCard = ({ icon, title, content }) => {
         {icon}
         <h2 className="text-indigo-3 text-2xl">{title}</h2>
       </div>
-      <div>{content}</div>
+      {content}
     </div>
   );
 };
