@@ -2,7 +2,7 @@ import Image from "next/image";
 import Button from "../Button";
 import { FiGithub } from "react-icons/fi";
 
-const ProjectShowcase = ({ image }) => {
+const ProjectShowcase = ({ image, url }) => {
   return (
     <div className="w-9/12">
       <div className="shadow-lg rounded-2xl">
@@ -15,7 +15,7 @@ const ProjectShowcase = ({ image }) => {
         />
       </div>
       <div className="flex justify-end mt-2 mb-4">
-        <Button variant="primary" href="https://linkedin.com" text="Website" />
+        {url ? <Button variant="primary" href={url} text="Website" /> : null}
 
         <Button
           variant="outlined-gray"
