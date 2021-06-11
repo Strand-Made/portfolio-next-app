@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Head from "next/head";
 import Navbar from "../../../components/navbar/Navbar";
 import ProjectContainer from "../../../components/project-page/ProjectContainer";
 import ProjectDescription from "../../../components/project-page/ProjectDescription";
@@ -12,11 +12,16 @@ const Project = ({ project }) => {
   console.log;
   return (
     <>
+      <Head>
+        <title>Bango | {project.title}</title>
+        <meta name="description" content={project.shortDesc} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Wrapper>
         <Navbar />
         <Container>
           <ProjectContainer>
-            <ProjectShowcase image={project.image} />
+            <ProjectShowcase image={project.image} url={project.url} />
             <ProjectDescription
               title={project.title}
               description={project.description}
