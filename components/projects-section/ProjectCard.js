@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
       variants={cardDisplayVariants}
       key={project.id}
       className="block relative rounded-2xl transition-shadow duration-700 ease-in-out 
-      shadow-lg hover:shadow-sm relative h-56 md:h-72 max-h-96 max-w-lg w-2/3 max-w-xs"
+      shadow-lg hover:shadow-sm relative h-72 w-full max-h-96 max-w-lg  max-w-xs"
     >
       <Image
         className="absolute top-0 right-0 left-0 rounded-2xl"
@@ -50,12 +50,13 @@ const CardContent = ({ project }) => {
       className="bg-indigo-3  flex flex-col items-center justify-between py-5
          absolute z-index-10 w-full top-0 rounded-2xl h-full"
     >
-      <h4 className="text-xl">{project.title}</h4>
+      <h4 className="text-xl font-bold">{project.title}</h4>
+      <p className="text-lg max-w-prose px-3">{project.shortDesc}</p>
       <div>
         <Link href="/project[id]" as={`/project/${project.id}`}>
           <a
             className="block bg-indigo-1 text-gray-1 text-center
-             w-36 shadow-md py-1 rounded-full hover:bg-indigo-2 focus:bg-indigo-2 focus:shadow hover:shadow"
+             w-36 shadow-md py-1 transition-colors duration-300 ease-linear rounded-full hover:bg-indigo-2 focus:bg-indigo-2 focus:shadow hover:shadow"
           >
             View
           </a>
