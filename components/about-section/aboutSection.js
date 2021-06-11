@@ -20,12 +20,12 @@ const AboutSection = () => {
               <AboutCard
                 icon={<BsFileCode className="text-3xl text-indigo-3" />}
                 title="Code"
-                content={<AboutCardContent />}
+                content={<AboutCardContent cardType="code" />}
               />
               <AboutCard
                 icon={<GiPencilRuler className="text-3xl text-indigo-3" />}
                 title="Design Tools"
-                content={<AboutCardContent />}
+                content={<AboutCardContent cardType="design" />}
               />
             </div>
           </Container>
