@@ -1,7 +1,5 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { FiGithub } from "react-icons/fi";
-import useOnClickOutside from "../../hooks";
-import Container from "../Container";
 import Logo from "../logo/Logo";
 import NavLink from "./NavLink";
 import MobileMenu from "./MobileMenu";
