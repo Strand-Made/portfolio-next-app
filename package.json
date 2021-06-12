@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "contentful": "^8.4.0",
     "emailjs-com": "^2.6.4",
     "framer-motion": "^4.1.17",
     "next": "10.2.3",

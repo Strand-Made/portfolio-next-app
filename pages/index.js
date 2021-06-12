@@ -1,6 +1,6 @@
 import { server } from "../config";
 import Head from "next/head";
-
+import { createClient } from "contentful";
 import Navbar from "../components/navbar/Navbar";
 import Wrapper from "../components/Wrapper";
 import HeroComponent from "../components/hero-section/HeroComponent";
@@ -10,6 +10,7 @@ import SocialSection from "../components/socials-section/SocialSection";
 import Footer from "../components/Footer";
 
 export default function Home({ projects }) {
+  console.log(projects);
   return (
     <>
       <Head>
@@ -35,12 +36,15 @@ export default function Home({ projects }) {
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/projects`);
-  const projects = await res.json();
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_TOKEN_ID,
+  });
+  const res = await client.getEntries({ content_type: "project" });
 
   return {
     props: {
-      projects,
+      projects: res.items,
     },
   };
 };

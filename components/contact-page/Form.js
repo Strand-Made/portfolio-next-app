@@ -17,10 +17,10 @@ const Form = () => {
 
     emailjs
       .sendForm(
-        apiKeys.SERVICE_ID,
-        apiKeys.TEMPLATE_ID,
+        process.env.EMAIL_SERVICE_ID,
+        process.env.EMAIL_TEMPLATE_ID,
         e.target,
-        apiKeys.USER_ID
+        process.env.EMAIL_USER_ID
       )
       .then(
         (result) => {

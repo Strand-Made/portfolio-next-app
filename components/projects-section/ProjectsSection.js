@@ -9,7 +9,7 @@ const ProjectsSection = ({ projects }) => {
       <h1 className="text-center text-gray-1">Projects</h1>
       <ul className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-center my-3">
         {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <ProjectCard key={project.sys.id} project={project} />
         ))}
       </ul>
       <div className="flex items-center bg-indigo-3 rounded-xl mx-auto max-w-xl p-2">
