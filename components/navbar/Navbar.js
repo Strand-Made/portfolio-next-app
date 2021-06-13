@@ -11,7 +11,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="font-sans text-indigo-3 w-full lg:px-3">
+    <nav className="font-sans text-indigo-3 w-full md:px-3">
       <div className="container md:mx-auto">
         <div className="flex flex-row justify-between w-full">
           <div className="ml-1">
