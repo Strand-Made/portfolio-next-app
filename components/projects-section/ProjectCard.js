@@ -49,7 +49,7 @@ const CardContent = ({ project }) => {
       animate={current}
       onTap={() => cycle()}
       variants={cardAnimationVariants}
-      className="bg-gradient-to-b from-indigo-3 to-indigo-4 flex flex-col items-center justify-between py-5
+      className="bg-gradient-to-b from-indigo-1 to-indigo-3 flex flex-col items-center justify-between py-5
          absolute z-index-10 w-full top-0 rounded-2xl h-full"
     >
       <h4 className="text-xl font-bold">{title}</h4>
