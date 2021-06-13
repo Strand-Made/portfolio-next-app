@@ -17,7 +17,7 @@ const Project = ({ project }) => {
   console.log(project);
   const { url, github, title, description, shortDesc, image, tags } =
     project.fields;
-  console.log;
+
   return (
     <>
       <Head>
