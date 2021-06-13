@@ -1,5 +1,5 @@
 import emailjs from "emailjs-com";
-import apiKeys from "../../apiKeys";
+
 import { useRouter } from "next/router";
 import FormGroup from "./FormGroup";
 import FormInputs from "./FormInputs";
@@ -17,10 +17,10 @@ const Form = () => {
 
     emailjs
       .sendForm(
-        process.env.EMAIL_SERVICE_ID,
-        process.env.EMAIL_TEMPLATE_ID,
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
         e.target,
-        process.env.EMAIL_USER_ID
+        process.env.USER_ID
       )
       .then(
         (result) => {
