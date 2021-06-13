@@ -2,7 +2,7 @@ import Container from "../Container";
 
 const ProjectsContainer = ({ children }) => {
   return (
-    <section id="projects" className="bg-indigo-2 w-full mt-7 py-2 text-gray-1">
+    <section className="bg-indigo-2 w-full mt-7 py-5 text-gray-1">
       <Container>{children}</Container>
     </section>
   );
