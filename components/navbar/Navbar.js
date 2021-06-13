@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="font-sans text-indigo-3 w-full">
       <div className="container md:mx-auto">
         <div className="flex flex-row justify-between w-full">
-          <div className="ml-1 relative">
+          <div className="ml-1">
             <Logo theme="regular" href="/" />
           </div>
           <div className="flex relative w-full sm:hidden">
