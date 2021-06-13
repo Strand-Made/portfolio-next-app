@@ -37,6 +37,7 @@ const ProjectCard = ({ project }) => {
       <Image
         className="absolute top-0 right-0 left-0 rounded-2xl"
         src={"https:" + image.fields.file.url}
+        alt={"screenshot of" + project.fields.title}
         desc={description}
         layout="fill"
       />
