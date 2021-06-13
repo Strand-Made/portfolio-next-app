@@ -5,7 +5,7 @@ const Burger = ({ open, setOpen }) => {
   return (
     <button
       role="toggle mobilenav"
-      className="absolute right-0 z-50 transition-colors duration-300 ease-in-out  focus:outline-none focus:bg-indigo-2 rounded-full "
+      className="absolute right-1 z-50 transition-colors duration-300 ease-in-out  focus:outline-none focus:bg-indigo-2 rounded-full "
       onClick={handleClick}
     >
       {open ? (

@@ -2,12 +2,12 @@ import Image from "next/image";
 import Button from "../Button";
 import { FiGithub } from "react-icons/fi";
 
-const ProjectShowcase = ({ image, url }) => {
+const ProjectShowcase = ({ image, url, github }) => {
   return (
-    <div className="w-9/12">
-      <div className="shadow-lg rounded-2xl">
+    <div className="w-full md:w-9/12 max-w-2xl">
+      <div className="shadow-lg rounded-2xl w-full">
         <Image
-          className="rounded-2xl"
+          className="rounded-2xl w-full"
           src={image}
           width={400}
           height={300}
@@ -19,7 +19,7 @@ const ProjectShowcase = ({ image, url }) => {
 
         <Button
           variant="outlined-gray"
-          href="https://github.com"
+          href={github}
           text="Code"
           icon={<FiGithub className="text-xl" />}
         />

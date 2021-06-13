@@ -6,11 +6,11 @@ const AboutContent = () => {
       <div className="relative flex justify-center">
         <BlobCenter className="hidden md:inline-block mix-blend-soft-light opacity-10 absolute z-0 transform -translate-y-40 translate-x-52 lg:translate-x-full w-full max-w-2xl" />
         <BlobCenter className="hidden md:inline-block mix-blend-soft-light opacity-10 absolute z-0 transform rotate-180 -translate-y-60 -translate-x-72 lg:-translate-x-full w-9/12 max-w-2xl" />
-        <p className="max-w-prose lg:text-lg font-normal">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo.
+        <p className="max-w-prose lg:text-lg">
+          I am a frontend developer who loves good user experiences. I have a
+          good grasp of technologies such as Javascript(ES6+), React, DOM, JSON,
+          HTML5 & CSS3. Finding good user experiences and solving problems is
+          something I find interesting and enjoy bringing new ideas to life.
         </p>
       </div>
     </>

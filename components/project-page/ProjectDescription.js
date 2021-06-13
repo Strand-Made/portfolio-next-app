@@ -1,16 +1,19 @@
-const ProjectDescription = ({ title, description }) => {
+import Badge from "./Badge";
+const ProjectDescription = ({ title, description, tags }) => {
   return (
-    <div className="flex flex-col w-full max-w-2xl items-center shadow bg-gray-1 h-64 xl:h-96 lg:ml-5 rounded-lg p-2">
+    <div className="flex flex-col w-full max-w-2xl items-center shadow bg-gray-1 h-auto  lg:ml-5 xl:h-96 rounded-lg p-2">
       <h1 className="text-gray-3 font-sans font-bold">{title}</h1>
       <div className="flex-grow">
         <p className="max-w-prose">{description}</p>
       </div>
-      <div className="flex justify-between mt-5 w-52">
+      <div className="flex justify-center mt-5">
         <div>
-          <h3 className="font-bold">Tools</h3>
-        </div>
-        <div>
-          <h3 className="font-bold">Tags</h3>
+          <h3 className="text-center font-bold">Tags</h3>
+          <ul className="flex flex-wrap justify-center max-w-xs">
+            {tags.map((tag) => {
+              return <Badge key={tag}>{tag}</Badge>;
+            })}
+          </ul>
         </div>
       </div>
     </div>

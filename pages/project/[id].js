@@ -14,7 +14,9 @@ const client = createClient({
 });
 
 const Project = ({ project }) => {
-  const { url, title, description, shortDesc, image } = project.fields;
+  console.log(project);
+  const { url, github, title, description, shortDesc, image, tags } =
+    project.fields;
   console.log;
   return (
     <>
@@ -30,8 +32,13 @@ const Project = ({ project }) => {
             <ProjectShowcase
               image={"https:" + image.fields.file.url}
               url={url}
+              github={github}
             />
-            <ProjectDescription title={title} description={description} />
+            <ProjectDescription
+              tags={tags}
+              title={title}
+              description={description}
+            />
           </ProjectContainer>
         </Container>
 

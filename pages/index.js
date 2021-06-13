@@ -1,4 +1,3 @@
-import { server } from "../config";
 import Head from "next/head";
 import { createClient } from "contentful";
 import Navbar from "../components/navbar/Navbar";
@@ -10,7 +9,6 @@ import SocialSection from "../components/socials-section/SocialSection";
 import Footer from "../components/Footer";
 
 export default function Home({ projects }) {
-  console.log(projects);
   return (
     <>
       <Head>
