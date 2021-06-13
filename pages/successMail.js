@@ -21,7 +21,7 @@ const successMail = () => {
         <Navbar />
         <Container>
           <main>
-            <div className="flex flex-col mt-3 w-full rounded-lg shadow-xl h-auto p-2 bg-gray-1">
+            <div className="flex flex-col mt-3 w-full justify-center rounded-lg shadow-xl h-96 p-2 bg-gray-1">
               <div className="flex flex-col items-center px-4">
                 <h1 className="text-3xl text-gray-3 mb-3">Message Sent!</h1>
                 <IoIosCheckmarkCircle className="text-5xl fill-current text-yellow-cta " />

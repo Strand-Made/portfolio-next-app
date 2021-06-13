@@ -11,27 +11,23 @@ import BlobRight from "../patterns/BlobRight";
 
 const Form = () => {
   const router = useRouter();
+  const serviceId = "service_jho4srb";
+  const userId = "user_7fhHcIWppAWl58QFwUVXf";
+  const templateId = "template_7o35lmn";
 
   function sendMail(e) {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        process.env.SERVICE_ID,
-        process.env.TEMPLATE_ID,
-        e.target,
-        process.env.USER_ID
-      )
-      .then(
-        (result) => {
-          router.push("/successMail");
+    emailjs.sendForm(serviceId, templateId, e.target, userId).then(
+      (result) => {
+        router.push("/successMail");
 
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   }
 
   return (

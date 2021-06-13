@@ -22,12 +22,12 @@ const Footer = () => {
           <div className="flex justify-between items-end">
             <Logo theme="white" href="/" />
             <div className="flex space-x-5 text-gray-1">
-              <Link href="www.twitter.com/stianstrand3">
+              <Link href="https://www.twitter.com/stianstrand3">
                 <a>
                   <IoLogoTwitter className="text-4xl" />
                 </a>
               </Link>
-              <Link href="www.github.com/StrandMade">
+              <Link href="https://www.github.com/StrandMade">
                 <a>
                   <IoLogoGithub className="text-4xl" />
                 </a>
