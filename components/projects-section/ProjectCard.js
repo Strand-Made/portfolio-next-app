@@ -1,22 +1,34 @@
 import Link from "next/link";
-
 import Image from "next/image";
-import { motion, useCycle } from "framer-motion";
+import { useEffect } from "react";
+import { motion, useCycle, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 const ProjectCard = ({ project }) => {
-  const transition = { duration: 1, ease: "easeInOut" };
   const { description, image } = project.fields;
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  const transition = { duration: 1, ease: "easeInOut" };
 
   const cardDisplayVariants = {
     initial: { opacity: 0, y: 100 },
     enter: { opacity: 1, y: 0, transition },
     leave: { opacity: 0, y: -100, transition },
   };
+  useEffect(() => {
+    if (inView) {
+      controls.start("enter");
+    }
+    if (!inView) {
+      controls.start("leave");
+    }
+  }, [controls, inView]);
 
   return (
     <motion.li
-      initial="leave"
-      animate="enter"
-      exit="leave"
+      ref={ref}
+      animate={controls}
       variants={cardDisplayVariants}
       key={project.sys.id}
       className="block relative rounded-2xl transition-shadow duration-700 ease-in-out 
