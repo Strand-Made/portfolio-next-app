@@ -1,4 +1,5 @@
 import ProfileImage from "./ProfileImage";
+import CoffeeDesk from "./CoffeeDesk";
 const HeroComponent = () => {
   return (
     <section className="w-full flex flex-col items-center ">
@@ -8,6 +9,7 @@ const HeroComponent = () => {
         </h1>
       </div>
       <ProfileImage />
+      <CoffeeDesk />
     </section>
   );
 };

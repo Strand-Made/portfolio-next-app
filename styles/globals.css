@@ -14,3 +14,89 @@
     @apply text-2xl;
   }
 }
+
+/* SMOKE */
+#smoke-1 {
+  stroke-dasharray: 0, 10;
+  -webkit-animation: smoke 6s ease infinite;
+  animation: smoke 6s ease infinite;
+}
+
+#smoke-2 {
+  stroke-dasharray: 0, 10;
+  -webkit-animation: smoke 6s 0.5s ease infinite;
+  animation: smoke 6s 0.5s ease infinite;
+}
+
+@-webkit-keyframes smoke {
+  0% {
+    stroke-dasharray: 0, 10;
+  }
+  50% {
+    stroke-dasharray: 10, 0;
+  }
+  100% {
+    stroke-dasharray: 10, 0;
+    opacity: 0;
+  }
+}
+
+@keyframes smoke {
+  0% {
+    stroke-dasharray: 0, 10;
+  }
+  50% {
+    stroke-dasharray: 10, 0;
+  }
+  100% {
+    stroke-dasharray: 10, 0;
+    opacity: 0;
+  }
+}
+
+/* WRITING */
+#line-1 {
+  opacity: 0;
+  -webkit-animation: writing 0.5s linear forwards;
+  animation: writing 0.5s linear forwards;
+}
+
+#line-2 {
+  opacity: 0;
+  -webkit-animation: writing 0.5s 1s linear forwards;
+  animation: writing 0.5s 1s linear forwards;
+}
+
+#line-3 {
+  opacity: 0;
+  -webkit-animation: writing 0.5s 1.5s linear forwards;
+  animation: writing 0.5s 1.5s linear forwards;
+}
+
+#line-4 {
+  opacity: 0;
+  -webkit-animation: writing 0.5s 2s linear forwards;
+  animation: writing 0.5s 2s linear forwards;
+}
+
+@-webkit-keyframes writing {
+  0% {
+    width: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 14px;
+    opacity: 1;
+  }
+}
+
+@keyframes writing {
+  0% {
+    width: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 14px;
+    opacity: 1;
+  }
+}
