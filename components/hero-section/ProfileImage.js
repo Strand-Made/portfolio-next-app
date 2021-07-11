@@ -10,6 +10,7 @@ const ProfileImage = () => {
           alt="avatar of myself smiling"
           width={300}
           height={300}
+          placeholder="blur"
         />
       </div>
     </div>

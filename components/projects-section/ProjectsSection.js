@@ -23,10 +23,10 @@ const ProjectsSection = ({ projects }) => {
               contact me
             </a>
           </Link>{" "}
-          to see more projects, or you can check out my github&nbsp;
+          to see more projects, or you can check out my&nbsp;
           <Link href="https://github.com/Strand-Made/">
             <a className="text-indigo-4 font-bold hover:underline focus:underline">
-              here
+              github
             </a>
           </Link>
         </p>

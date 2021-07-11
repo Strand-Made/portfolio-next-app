@@ -23,13 +23,15 @@ const Footer = () => {
             <Logo theme="white" href="/" />
             <div className="flex space-x-5 text-gray-1">
               <Link href="https://www.twitter.com/stianstrand3">
-                <a>
+                <a className="flex flex-col items-center">
                   <IoLogoTwitter className="text-4xl" />
+                  Twitter
                 </a>
               </Link>
               <Link href="https://www.github.com/StrandMade">
-                <a>
+                <a className="flex flex-col items-center">
                   <IoLogoGithub className="text-4xl" />
+                  Github
                 </a>
               </Link>
             </div>

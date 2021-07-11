@@ -15,7 +15,7 @@ export default function Home({ projects }) {
         <title>Bango Frontend Portfolio</title>
         <meta
           name="description"
-          content="My name is Stian, and I am a frontend developer based in Bodø. This is my portfolio."
+          content="My name is Stian, and I am a frontend developer based in Bodø. I love making great user experiences while writing maintainable code."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

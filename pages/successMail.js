@@ -13,7 +13,7 @@ const successMail = () => {
         <title>Message sent | Bango Portfolio</title>
         <meta
           name="description"
-          content="Message sent! I will contact you as fast as I can ."
+          content="Message sent! I will contact you as fast as I can."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

@@ -11,7 +11,7 @@ export default function Contact() {
         <title>Contact me</title>
         <meta
           name="description"
-          content="My name is Stian, and I am a frontend developer based in Bodø. This is my portfolio."
+          content="Want help with a website or a quick chat? Don't hesitate to contact me."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
