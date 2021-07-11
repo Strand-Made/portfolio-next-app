@@ -21,7 +21,7 @@ const Project = ({ project }) => {
   return (
     <>
       <Head>
-        <title>Bango | {title}</title>
+        <title>Strand | {title}</title>
         <meta name="description" content={shortDesc} />
         <link rel="icon" href="/favicon.ico" />
       </Head>

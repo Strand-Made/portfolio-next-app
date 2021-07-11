@@ -35,7 +35,9 @@ const Footer = () => {
                 </a>
               </Link>
             </div>
-            <p className="font-body text-xs text-gray-1">&copy; Bango 2021</p>
+            <p className="font-body text-xs text-gray-1">
+              &copy; Stian Strand 2021
+            </p>
           </div>
         </div>
       </Container>
