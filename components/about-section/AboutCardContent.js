@@ -26,9 +26,6 @@ const AboutCardContent = ({ cardType }) => {
   if (cardType === "design") {
     return (
       <>
-        <h3 className="text-center font-bold text-gray-2 text-lg">
-          Design tools
-        </h3>
         <ul className="text-center">
           <li>Figma</li>
           <li>Adobe xD</li>
