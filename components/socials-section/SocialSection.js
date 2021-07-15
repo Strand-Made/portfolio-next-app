@@ -14,7 +14,7 @@ const SocialSection = () => {
         <SocialCard
           title="Visit my Linkedin"
           icon={<IoLogoLinkedin className="text-8xl" />}
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/stian-strand-877b9913b/"
         ></SocialCard>
       </div>
     </Container>
