@@ -37,6 +37,15 @@ const Button = ({ variant, text, href, icon }) => {
       </Link>
     );
   }
+  if (variant === "secondary") {
+    return (
+      <Link href={href}>
+        <a className="flex flex-col justify-evenly items-center transition-colors duration-300 ease-linear bg-gray-4 hover:bg-gray-5 rounded-full text-gray-1 text-base shadow-md my-3 mx-1 w-36 py-4">
+          {text}
+        </a>
+      </Link>
+    );
+  }
   return console.log("Please use a correct button variant");
 };
 

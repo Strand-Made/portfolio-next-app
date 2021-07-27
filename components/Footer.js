@@ -9,11 +9,7 @@ const Footer = () => {
       <Container>
         <div className="flex flex-col h-32 justify-between">
           <div className="flex flex-col items-center">
-            <Link href="/contact">
-              <a className="flex flex-col justify-evenly items-center transition-colors duration-300 ease-linear bg-gray-4 hover:bg-gray-5 rounded-md text-gray-1 text-base shadow-md my-3 mx-1 w-36 py-4">
-                Contact me
-              </a>
-            </Link>
+            <Button href="/contact" variant="secondary" text="Contact me" />
           </div>
           <div className="flex justify-between items-end">
             <Logo theme="white" href="/" />
