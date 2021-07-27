@@ -9,7 +9,7 @@ const SocialSection = () => {
         <SocialCard
           title="Visit my Github"
           icon={<IoLogoGithub className="text-8xl" />}
-          href="https://www.github.com"
+          href="https://www.github.com/Strand-Made/"
         ></SocialCard>
         <SocialCard
           title="Visit my Linkedin"

@@ -52,8 +52,8 @@ export default function Home({ projects }) {
 
 export const getStaticProps = async () => {
   const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_TOKEN_ID,
+    space: "g44epc9vhpwk",
+    accessToken: "U3Yme6joam-hSU63dX_7-ckwy9wjd2gOhPprbDvLwS0",
   });
   const res = await client.getEntries({ content_type: "project" });
 

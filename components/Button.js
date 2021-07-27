@@ -37,7 +37,7 @@ const Button = ({ variant, text, href, icon }) => {
       </Link>
     );
   }
-  return console.log("Please use a correct variant");
+  return console.log("Please use a correct button variant");
 };
 
 export default Button;

@@ -1,15 +1,16 @@
 import Link from "next/link";
 import Container from "./Container";
 import Logo from "./logo/Logo";
+import Button from "./Button";
 import { IoLogoGithub, IoLogoTwitter, IoLogoLinkedin } from "react-icons/io";
 const Footer = () => {
   return (
     <footer className="bg-gray-3 mt-6 py-5">
       <Container>
         <div className="flex flex-col h-32 justify-between">
-          <div className="flex flex-col items-center md:items-end">
+          <div className="flex flex-col items-center">
             <Link href="/contact">
-              <a className="flex flex-col justify-evenly items-center bg-gray-4 hover:bg-gray-5 rounded-md text-gray-1 text-base shadow-md my-3 mx-1 w-36 h-16">
+              <a className="flex flex-col justify-evenly items-center transition-colors duration-300 ease-linear bg-gray-4 hover:bg-gray-5 rounded-md text-gray-1 text-base shadow-md my-3 mx-1 w-36 h-16">
                 Contact me
               </a>
             </Link>
