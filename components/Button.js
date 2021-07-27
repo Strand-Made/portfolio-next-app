@@ -40,7 +40,11 @@ const Button = ({ variant, text, href, icon }) => {
   if (variant === "secondary") {
     return (
       <Link href={href}>
-        <a className="flex flex-col justify-evenly items-center transition-colors duration-300 ease-linear bg-gray-4 hover:bg-gray-5 rounded-full text-gray-1 text-base shadow-md my-3 mx-1 w-36 py-4">
+        <a
+          className="flex flex-col justify-evenly items-center transition-colors duration-300
+         ease-linear bg-gray-4 hover:bg-gray-5 rounded-full 
+         text-gray-1 text-base shadow-md my-3 mx-1 w-36 py-2"
+        >
           {text}
         </a>
       </Link>
