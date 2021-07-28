@@ -1,14 +1,35 @@
-import Button from "../Button";
+import { useInView } from "react-intersection-observer";
+import { useAnimation, motion } from "framer-motion";
+import { useEffect } from "react";
 
-const SocialCard = ({ title, icon, href }) => {
+const SocialCard = ({ children, heading }) => {
+  const { ref, inView } = useInView();
+  const controls = useAnimation();
+  const transition = { duration: 0.5, ease: "easeInOut" };
+  const cardDisplayVariants = {
+    enter: { opacity: 1, x: 0, transition },
+    leave: { opacity: 0.5, x: 50, transition },
+  };
+  useEffect(() => {
+    if (inView) {
+      controls.start("enter");
+    }
+    if (!inView) {
+      controls.set("leave");
+    }
+  }, [controls, inView]);
   return (
-    <div className="flex flex-col justify-evenly items-center bg-gray-4 rounded-md text-gray-1 text-base shadow-md my-3 mx-1 w-1/2 max-w-xs h-44">
-      <h4 className="text-lg">{title}</h4>
-      <div>{icon}</div>
-      <div className="self-end">
-        <Button variant="outlined" href={href} text="Visit" />
+    <motion.div
+      ref={ref}
+      animate={controls}
+      variants={cardDisplayVariants}
+      className="bg-pink-cta text-indigo-1 rounded-lg mt-3 px-5 py-3 shadow-lg relative"
+    >
+      {heading}
+      <div className="flex flex-row justify-evenly space-x-3 items-center h-44">
+        {children}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
