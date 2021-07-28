@@ -52,15 +52,15 @@ const Form = () => {
 
         <FormGroup>
           <InputLabel id="name" label="Name" />
-          <FormInputs id="name" name={"name"} label="Name" />
+          <FormInputs id="name" name="name" label="Name" />
         </FormGroup>
         <FormGroup>
           <InputLabel id="email" label="Email" />
-          <FormInputs id="email" name={"email"} label="Email" />
+          <FormInputs id="email" name="from_email" label="Email" />
         </FormGroup>
         <FormGroup>
           <InputLabel id="message" label="Message" />
-          <FormTextArea id="message" name={"message"} label="Subject" />
+          <FormTextArea id="message" name="message" label="Subject" />
         </FormGroup>
         <div className="self-end">
           <FormButton />
