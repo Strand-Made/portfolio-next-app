@@ -19,13 +19,22 @@ const SocialSection = () => {
             </h3>
           }
         >
-          <SocialCardIcon icon={<IoLogoLinkedin />} href="www.linkedin.com" />
+          <SocialCardIcon
+            icon={<IoLogoLinkedin />}
+            href="https://www.linkedin.com/stian-strand-877b9913b/"
+          />
           <SocialCardIcon
             icon={<IoLogoGithub />}
-            href="www.github.com/Strand-Made"
+            href="https://www.github.com/Strand-Made"
           />
-          <SocialCardIcon icon={<IoLogoFacebook />} href="www.facebook.com/" />
-          <SocialCardIcon icon={<IoLogoTwitter />} href="www.twitter.com" />
+          <SocialCardIcon
+            icon={<IoLogoFacebook />}
+            href="https://www.facebook.com/stian.strand1"
+          />
+          <SocialCardIcon
+            icon={<IoLogoTwitter />}
+            href="https://www.twitter.com/stianstrand3"
+          />
         </SocialCard>
       </div>
     </Container>
