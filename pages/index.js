@@ -52,7 +52,7 @@ export default function Home({ projects }) {
 
 export const getStaticProps = async () => {
   const client = createClient({
-    space: process.send.CONTENTFUL_SPACE_ID,
+    space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_TOKEN_ID,
   });
   const res = await client.getEntries({ content_type: "project" });
