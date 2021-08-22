@@ -23,10 +23,10 @@ const SocialCard = ({ children, heading }) => {
       ref={ref}
       animate={controls}
       variants={cardDisplayVariants}
-      className="bg-pink-cta text-indigo-1 rounded-lg mt-3 px-5 py-3 shadow-lg relative"
+      className="text-indigo-1 rounded-lg mt-3 px-5 py-3 relative"
     >
       {heading}
-      <div className="flex flex-row justify-evenly space-x-3 items-center h-44">
+      <div className="flex flex-row justify-evenly space-x-3 items-center h-32">
         {children}
       </div>
     </motion.div>

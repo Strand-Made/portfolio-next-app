@@ -1,36 +1,30 @@
-import Link from "next/link";
+import ContactBox from "./ContactBox";
 import ProjectsContainer from "./ProjectsContainer";
-import ProjectCard from "./ProjectCard";
-import { IoMdInformationCircle } from "react-icons/io";
+import Card from "../card/Card";
+import ProjectImage from "../card/ProjectImage";
+import CardBody from "../card/CardBody";
 
 const ProjectsSection = ({ projects }) => {
   return (
     <ProjectsContainer>
-      <h1 className="text-center text-gray-1">Projects</h1>
-      <ul className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 lg:space-x-5 items-center my-3">
+      <h3 className="text-center capitalize text-gray-1 font-bold text-4xl">
+        featured projects
+      </h3>
+      <ul className="flex flex-col items-center w-full  my-5 gap-4 ">
         {projects.map((project) => (
-          <ProjectCard key={project.sys.id} project={project} />
+          <Card id={project.sys.id}>
+            <CardBody
+              github={project.fields.github}
+              title={project.fields.title}
+              text={project.fields.shortDesc}
+              link={project.sys.id}
+              tags={project.fields.tags}
+            />
+            <ProjectImage project={project} />
+          </Card>
         ))}
       </ul>
-      <div className="flex items-center bg-indigo-3 rounded-xl mx-auto max-w-xl p-2">
-        <div className="mr-2">
-          <IoMdInformationCircle className="text-4xl" />
-        </div>
-        <p className="max-w-prose">
-          You are free to {""}
-          <Link href="/contact">
-            <a className="text-indigo-4 font-bold hover:underline focus:underline">
-              contact me
-            </a>
-          </Link>{" "}
-          to see more projects, or you can check out my&nbsp;
-          <Link href="https://github.com/Strand-Made/">
-            <a className="text-indigo-4 font-bold hover:underline focus:underline">
-              github
-            </a>
-          </Link>
-        </p>
-      </div>
+      <ContactBox />
     </ProjectsContainer>
   );
 };

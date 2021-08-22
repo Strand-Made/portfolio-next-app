@@ -4,7 +4,7 @@ const SocialCardIcon = ({ icon, href }) => {
     <Link href={href}>
       <a
         className="border-2  transition-colors duration-150
-         ease-linear text-4xl text-gray-1 border-pink-white rounded-full hover:border-indigo-2 p-2"
+         ease-linear text-4xl text-indigo-1 border-indigo-3 rounded-full hover:border-indigo-2 p-2"
       >
         {icon}
       </a>
