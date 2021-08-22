@@ -7,6 +7,8 @@ module.exports = {
       "indigo-2": "#647ACB",
       "indigo-3": "#19216C",
       "indigo-4": "#BED0F7",
+      "indigo-5": "#201933",
+      "gray-light": "#CBD2D9",
       "gray-5": "#616E7C",
       "gray-4": "#3E4C59",
       "gray-3": "#1F2933",
@@ -15,6 +17,7 @@ module.exports = {
       "pink-cta": "#620042",
       "pink-white": "#FFE3EC",
       "yellow-cta": "#F7C948",
+      "dark-cyan": "#0FB5BA",
     },
     //replace default font utility with imported fonts
     fontFamily: {
@@ -27,5 +30,4 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
 };
