@@ -23,11 +23,13 @@ const Project = ({ project }) => {
       <Head>
         <title>Strand | {title}</title>
         <meta name="description" content={shortDesc} />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Wrapper>
         <Navbar />
         <Container>
+          <h1 className="text-gray-3 capitalize  text-center font-sans font-bold my-3">
+            {title}
+          </h1>
           <ProjectContainer>
             <ProjectShowcase
               image={"https:" + image.fields.file.url}
