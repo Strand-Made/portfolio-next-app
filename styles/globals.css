@@ -14,38 +14,6 @@
     @apply text-2xl;
   }
 }
-@layer components {
-  .card {
-    @apply mt-8 mx-auto relative rounded-3xl grid grid-cols-12 w-full max-w-max;
-  }
-  .card-content {
-    @apply z-10 max-w-md col-span-full p-5 row-span-full md:col-start-5 md:col-end-12;
-  }
-  .card-content .btn-container {
-    @apply flex;
-  }
-  .card-image {
-    @apply col-span-full h-full max-w-lg relative row-span-full md:col-start-1 md:col-end-7 md:row-start-1 opacity-40;
-  }
-  @media (min-width: 767px) {
-    .card:nth-child(odd) .card-content {
-      grid-column: 1/7;
-      text-align: left;
-    }
-    .card:nth-child(even) .card-content {
-      text-align: right;
-    }
-    .card:nth-child(even) .card-image {
-      grid-column: 1/9;
-    }
-    .card:nth-child(even) .btn-container {
-      @apply justify-end;
-    }
-    .card:nth-child(odd) .card-image {
-      grid-column: 5/12;
-    }
-  }
-}
 
 #smoke-1 {
   stroke-dasharray: 0, 10;
