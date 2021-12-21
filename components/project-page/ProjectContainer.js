@@ -1,6 +1,4 @@
-import ProjectShowcase from "./ProjectShowcase";
-import ProjectDescription from "./ProjectDescription";
-const projectContainer = ({ children }) => {
+const ProjectContainer = ({ children }) => {
   return (
     <div className="flex flex-col my-5 lg:flex-row items-center">
       {children}
@@ -8,4 +6,4 @@ const projectContainer = ({ children }) => {
   );
 };
 
-export default projectContainer;
+export default ProjectContainer;

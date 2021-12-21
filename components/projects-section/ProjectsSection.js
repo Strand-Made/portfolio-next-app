@@ -17,12 +17,12 @@ const ProjectsSection = ({ projects }) => {
           <IoMdInformationCircle className="text-4xl" />
         </div>
         <p className="max-w-prose">
-          You are free to {""}
+          You are free to{" "}
           <Link href="/contact">
             <a className="text-indigo-4 font-bold hover:underline focus:underline">
-              contact me
+              contact me{" "}
             </a>
-          </Link>{" "}
+          </Link>
           to see more projects, or you can check out my&nbsp;
           <Link href="https://github.com/Strand-Made/">
             <a className="text-indigo-4 font-bold hover:underline focus:underline">

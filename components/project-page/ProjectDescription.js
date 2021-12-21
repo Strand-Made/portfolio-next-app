@@ -1,4 +1,5 @@
 import Badge from "./Badge";
+
 const ProjectDescription = ({ title, description, tags }) => {
   return (
     <div className="flex flex-col w-full max-w-2xl items-center shadow bg-gray-1 h-auto  lg:ml-5 xl:h-96 rounded-lg p-2">

@@ -14,7 +14,6 @@ const client = createClient({
 });
 
 const Project = ({ project }) => {
-  console.log(project);
   const { url, github, title, description, shortDesc, image, tags } =
     project.fields;
 
@@ -52,7 +51,7 @@ export const getStaticPaths = async () => {
   const res = await client.getEntries({
     content_type: "project",
   });
-  console.log(res);
+
   const paths = res.items.map((item) => {
     return {
       params: { id: item.sys.id },
