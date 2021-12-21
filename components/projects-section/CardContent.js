@@ -26,6 +26,7 @@ const CardContent = ({ project }) => {
       <p className="text-lg max-w-prose px-3">{shortDesc}</p>
       <div>
         <Link href={project.sys.id ? "/project[id]" : "/"}>
+          as={`/project/${project.sys.id}`}
           <a
             className="block bg-indigo-1 text-gray-1 text-center
                w-36 shadow-md py-1 transition-colors duration-300 ease-linear rounded-full hover:bg-indigo-2 focus:bg-indigo-2 focus:shadow hover:shadow"
