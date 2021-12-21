@@ -19,7 +19,7 @@ const ProjectShowcase = ({ image, url, github }) => {
 
         <Button
           variant="outlined-gray"
-          href={github}
+          href={github ? github : ""}
           text="Code"
           icon={<FiGithub className="text-xl" />}
         />
