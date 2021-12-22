@@ -14,9 +14,9 @@ const SocialSection = () => {
       <div className="flex flex-col w-full items-center justify-center">
         <SocialCard
           heading={
-            <h3 className="text-xl text-center font-bold text-gray-1">
+            <h5 className="text-xl text-center font-bold text-gray-1">
               Get in touch on
-            </h3>
+            </h5>
           }
         >
           <SocialCardIcon
